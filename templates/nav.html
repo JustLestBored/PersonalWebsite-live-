@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm navbar-transparent bg-transparent">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'base:home' %}">Lester Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base:home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base:about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base:resume' %}">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base:contact' %}">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-auto">
+      <button type="button" onclick="window.location.href='https://drive.google.com/file/d/1kZSG1CfUgumwg4iCpEAWsHntoBz_EkgX/view?usp=drive_link'">Download CV</button>
+    </div>
+  
+  </div>
+</nav>
+
+<style>
+  /* Default button styles */
+  button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+
+  /* Change color on hover */
+  button:hover {
+    background-color: #45a049;
+  }
+
+  
+</style>

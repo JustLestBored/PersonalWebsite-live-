@@ -1,0 +1,75 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    flex: 0 0 calc(50% - 20px); /* 50% width with gap */
+    background-color: #f0f0f0;
+    padding: 100px 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.modal-content {
+    width: 80%;
+    margin: auto;
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li:hover {
+    background-color: #555;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.modal-body input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-body input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-body input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
